@@ -1,0 +1,21 @@
+<form>
+    <fieldset>
+        <legend>Cadastro de usuário</legend>
+        <div>
+            <label for="nomeUsuario" class="form-label">Nome*:</label>
+            <input type="text" class="form-control" name="nome" aria-describedby="nomeUsuario" [(ngModel)]="nome">
+            <label for="emailUsuario" class="form-label">Email*:</label>
+            <input type="text" class="form-control" name="email" aria-describedby="emailUsuario" [(ngModel)]="email">
+            <label for="senhaUsuario" class="form-label">Senha*:</label>
+            <input type="password" class="form-control" name="senha" aria-describedby="senhaUsuario" [(ngModel)]="senha">
+        </div>
+        <br>
+        <div>
+            <button type="submit" class="btn btn-primary" (click)="salvar()">Salvar</button>.
+            <button type="submit" class="btn btn-danger" (click)="limpar()">Limpar</button>
+        </div>
+    </fieldset>
+
+
+
+</form>

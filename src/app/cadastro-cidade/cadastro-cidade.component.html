@@ -1,0 +1,12 @@
+<form>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Nome</label>
+      <input type="text" class="form-control" name="nome" aria-describedby="Nome da Cidade" [(ngModel)]="nome">
+      <div id="emailHelp" class="form-text">Digite o nome de sua cidade</div>
+    </div>
+    <div class="mb-3">
+<app-lista-estado></app-lista-estado>
+    </div>
+    <button type="submit" class="btn btn-primary" (click)="salvar()">Salvar</button>.
+    <button type="submit" class="btn btn-danger" (click)="limpar()">Limpar</button>
+  </form>

@@ -1,0 +1,16 @@
+<form (ngSubmit)="salvar()">
+    <fieldset>
+        <legend>Cadastro de clientes</legend>
+    <div>
+      <label for="name" class="form-label">Nome:</label>
+      <input type="text" id="name" class="form-control" [(ngModel)]="client.name" name="name" required>
+      <label for="cpf" class="form-label">CPF:</label>
+      <input type="text" id="cpf" class="form-control" [(ngModel)]="client.cpf" name="cpf" required>
+      <label for="city" class="form-label">Cidade:</label>
+      <input type="text" id="city" class="form-control" [(ngModel)]="client.city" name="city" required>
+    </div>
+    <br>
+    <button type="submit" class="btn btn-primary">Salvar</button>
+</fieldset>
+  </form>
+  
